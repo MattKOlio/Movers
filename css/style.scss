@@ -15,13 +15,13 @@ $txt-links: #6D799F;
 
 body {
     font-size: 14px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .header__info {
     background-color: $clr-header;
     overflow: hidden;
     padding: 0 50px;
-    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     
     ._container {
@@ -76,7 +76,7 @@ body {
             background-color: $clr-accent;
             line-height: 45px;
             
-            font-family: 'Poppins', sans-serif;
+            
             font-weight: 500;
             font-size: 1rem;
             text-transform: uppercase;
@@ -105,7 +105,6 @@ body {
 
             a {
                 text-decoration: none;
-                font-family: 'Poppins', sans-serif;
                 color: $txt-dark;
                 font-weight: 500;
 
@@ -149,7 +148,6 @@ body {
         max-width: 1140px;
         margin: 0 auto;
         height: 150px;
-        font-family: 'Poppins', sans-serif;
         
         .page__title {
             font-size: 3em;
@@ -190,7 +188,6 @@ body {
     ._container {
         max-width: 1140px;
         margin: 0 auto;
-        font-family: 'Poppins', sans-serif;
 
         ._services {
             width: 30% !important;
@@ -231,7 +228,6 @@ body {
 footer {
     margin-top: 75px;
     background-color: $clr-footer;
-    font-family: 'Poppins', sans-serif;
 
     .footer__content {
         padding: 80px 50px 30px 50px;
@@ -304,5 +300,87 @@ footer {
         background-color: $clr-copyright;
         color: #ddd;
         height: 50px;
+    }
+}
+
+._contact {
+    background-image: url("/img/quote-bg.jpg");
+    background-size: cover;
+    overflow: hidden;
+    padding: 50px;
+
+    form {
+        max-width: 1140px;
+        padding: 30px;
+        border: 3px solid $clr-accent;
+        border-radius: 5px;
+
+        .col {
+            padding: 20px;
+        }
+    
+        .form-control {
+            background: transparent;
+            color: #fff;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #fff;
+            margin-bottom: 10px;
+    
+            &::placeholder {
+                color: #fff;
+            }
+        }
+    
+        .form-select {
+            border-color: #fff;
+            background-color: $clr-accent;
+            color: #fff;
+        }
+
+        .btn-danger {
+            height: 45px;
+            width: 180px;
+            background-color: $clr-accent;
+            line-height: 45px;
+            
+            
+            font-weight: bold;
+            font-size: 1rem;
+            text-transform: uppercase;
+            border-radius: 30px;
+            border: none;
+            padding: 0;
+
+            &:hover, &:focus {
+                background-color: #fff;
+                color: $clr-accent;
+            }
+        }
+    }
+}
+
+form {
+    .col {
+        padding: 20px;
+    }
+
+    .form-control {
+        background: transparent;
+        color: #fff;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 10px;
+
+        &::placeholder {
+            color: #fff;
+        }
+    }
+
+    .form-select {
+        border-color: #fff;
+        background-color: $clr-accent;
+        color: #fff;
     }
 }

@@ -3,13 +3,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
   font-size: 14px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .header__info {
   background-color: #F7F9FA;
   overflow: hidden;
   padding: 0 50px;
-  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
 }
 
@@ -64,7 +64,6 @@ body {
   width: 180px;
   background-color: #EF4B4A;
   line-height: 45px;
-  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1rem;
   text-transform: uppercase;
@@ -94,7 +93,6 @@ body {
 
 .navbar ul li a {
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
   color: #414042;
   font-weight: 500;
   height: 95px;
@@ -134,7 +132,6 @@ body {
   max-width: 1140px;
   margin: 0 auto;
   height: 150px;
-  font-family: 'Poppins', sans-serif;
 }
 
 ._title ._container .page__title {
@@ -175,7 +172,6 @@ body {
 ._body ._container {
   max-width: 1140px;
   margin: 0 auto;
-  font-family: 'Poppins', sans-serif;
 }
 
 ._body ._container ._services {
@@ -216,7 +212,6 @@ body {
 footer {
   margin-top: 75px;
   background-color: #171A1E;
-  font-family: 'Poppins', sans-serif;
 }
 
 footer .footer__content {
@@ -288,5 +283,107 @@ footer .copyright {
   background-color: #1E2227;
   color: #ddd;
   height: 50px;
+}
+
+._contact {
+  background-image: url("/img/quote-bg.jpg");
+  background-size: cover;
+  overflow: hidden;
+  padding: 50px;
+}
+
+._contact form {
+  max-width: 1140px;
+  padding: 30px;
+  border: 3px solid #EF4B4A;
+  border-radius: 5px;
+}
+
+._contact form .col {
+  padding: 20px;
+}
+
+._contact form .form-control {
+  background: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 10px;
+}
+
+._contact form .form-control::-webkit-input-placeholder {
+  color: #fff;
+}
+
+._contact form .form-control:-ms-input-placeholder {
+  color: #fff;
+}
+
+._contact form .form-control::-ms-input-placeholder {
+  color: #fff;
+}
+
+._contact form .form-control::placeholder {
+  color: #fff;
+}
+
+._contact form .form-select {
+  border-color: #fff;
+  background-color: #EF4B4A;
+  color: #fff;
+}
+
+._contact form .btn-danger {
+  height: 45px;
+  width: 180px;
+  background-color: #EF4B4A;
+  line-height: 45px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 30px;
+  border: none;
+  padding: 0;
+}
+
+._contact form .btn-danger:hover, ._contact form .btn-danger:focus {
+  background-color: #fff;
+  color: #EF4B4A;
+}
+
+form .col {
+  padding: 20px;
+}
+
+form .form-control {
+  background: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 10px;
+}
+
+form .form-control::-webkit-input-placeholder {
+  color: #fff;
+}
+
+form .form-control:-ms-input-placeholder {
+  color: #fff;
+}
+
+form .form-control::-ms-input-placeholder {
+  color: #fff;
+}
+
+form .form-control::placeholder {
+  color: #fff;
+}
+
+form .form-select {
+  border-color: #fff;
+  background-color: #EF4B4A;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
