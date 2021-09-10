@@ -8,6 +8,7 @@ $clr-copyright: #1E2227;
 $txt-light: #B1B5C9;
 $txt-dark: #414042;
 $txt-normal: #777;
+$txt-links: #6D799F;
 
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -233,7 +234,7 @@ footer {
     font-family: 'Poppins', sans-serif;
 
     .footer__content {
-        padding: 080px 50px 30px 50px;
+        padding: 80px 50px 30px 50px;
         max-width: 1140px;
         width: 100%;
         margin: 0 auto;
@@ -244,7 +245,7 @@ footer {
             .footer__title {
                 margin-top: 12px;
                 color: $txt-light;
-                font-weight: 900px;
+                font-weight: bold;
                 color: #fff;
             }
 
@@ -266,6 +267,33 @@ footer {
 
                     &:hover, &:focus {
                         color: $clr-accent;
+                    }
+                }
+            }
+        }
+
+        .footer_nav {
+            nav {
+                a {
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: 1.2em;
+                    color: $txt-links;
+                    margin-bottom: 10px;
+                    padding: 0;
+                    transition: all 0.2s;
+
+                    &.footer__title {
+                        margin-top: 12px;
+                        margin-bottom: 16px;
+                        color: $txt-light;
+                        font-weight: bold;
+                        color: #fff;
+                    }
+
+                    &:hover, &:focus {
+                        color: #fff;
+                        text-decoration: underline;
                     }
                 }
             }
