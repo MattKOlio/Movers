@@ -140,7 +140,7 @@ body {
 
 ._title {
     padding: 0 50px;
-    background-image: url(/img/bg.jpg);
+    background-image: url("../img/bg.jpg");
     background-size: cover;
     overflow: hidden;
 
@@ -304,7 +304,7 @@ footer {
 }
 
 ._contact {
-    background-image: url("/img/quote-bg.jpg");
+    background-image: url("../img/quote-bg.jpg");
     background-size: cover;
     overflow: hidden;
     padding: 50px;
