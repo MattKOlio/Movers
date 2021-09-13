@@ -1,5 +1,6 @@
 /* COLORS */
 $clr-header: #F7F9FA;
+$clr-header-home: #030F27;
 $clr-accent: #EF4B4A;
 $clr-highlight: #030F27;
 $clr-footer: #171A1E;
@@ -9,6 +10,7 @@ $txt-light: #B1B5C9;
 $txt-dark: #414042;
 $txt-normal: #777;
 $txt-links: #6D799F;
+$txt-header-home: #558CC0;
 
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -16,6 +18,50 @@ $txt-links: #6D799F;
 body {
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
+}
+
+._wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.home {
+
+    .header__info {
+        background-color: $clr-header-home;
+        overflow: hidden;
+        padding: 0 50px;
+        font-size: 1rem;
+        
+        ._wrapper { 
+            .phone, .email {
+                .bi {
+                    color: $clr-accent;
+                    margin-right: 5px;
+                }
+    
+                a {
+                    text-decoration: none;
+                    color: $txt-header-home;
+                }
+            }
+    
+            .phone::after {
+                content: "|";
+                padding-left: 10px;
+            }
+    
+            .yelp {
+                overflow: hidden;
+        
+                img {
+                    object-fit: fill;
+                    height: 50px;
+                }
+            }
+        }
+    }
 }
 
 .header__info {
@@ -93,11 +139,16 @@ body {
 
 .navbar {
     padding: 0 50px;
+    font-size: 1em;
+    
+    button {
+        margin-bottom: 20px;
+    }
 
     ul {
         max-width: 1140px;
         margin: 0 auto;
-        height: 100px;
+        //height: 100px;
 
         li {
             list-style: none;
@@ -190,7 +241,6 @@ body {
         margin: 0 auto;
 
         ._services {
-            width: 30% !important;
             border: 1px solid $txt-light;
             border-radius: 5px;
             padding: 30px 35px;
@@ -208,6 +258,15 @@ body {
                     left: -5px;
                 }
 
+                &:first-child {
+                    font-weight: 600;
+                    font-size: 1.5em;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+
                 &:hover, &:focus {
                     color: $clr-accent;
                 }
@@ -219,7 +278,6 @@ body {
         }
 
         ._text {
-            width: 65%;
             color: $txt-normal;
         }
     }
@@ -231,9 +289,7 @@ footer {
 
     .footer__content {
         padding: 80px 50px 30px 50px;
-        max-width: 1140px;
         width: 100%;
-        margin: 0 auto;
 
         .footer__contact {
             font-size: 1.2em;
@@ -300,6 +356,8 @@ footer {
         background-color: $clr-copyright;
         color: #ddd;
         height: 50px;
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -310,10 +368,16 @@ footer {
     padding: 50px;
 
     form {
-        max-width: 1140px;
         padding: 30px;
         border: 3px solid $clr-accent;
         border-radius: 5px;
+
+        h2 {
+            color: #fff;
+            margin-bottom: 25px;
+            width: 100%;
+            text-align: center;
+        }
 
         .col {
             padding: 20px;
@@ -382,5 +446,21 @@ form {
         border-color: #fff;
         background-color: $clr-accent;
         color: #fff;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    ._title {
+        
+        ._container {
+
+            .page__title {
+                font-size: 7.5vw;
+            }
+
+            .breadcrumb {
+                font-size: 2.5vw;
+            }
+        }
     }
 }

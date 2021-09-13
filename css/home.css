@@ -1,0 +1,170 @@
+/* COLORS */
+.home {
+  background-image: url("../img/bg-home.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.home-logo {
+  padding-top: 20px;
+}
+
+.home-logo img {
+  width: 180px;
+}
+
+.home-logo .credentials div {
+  padding: 0 20px 0 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.home-logo .credentials div .bi {
+  color: #EF4B4A;
+  font-size: 30px;
+}
+
+.home-logo .credentials div span {
+  font-weight: 500;
+  font-size: 0.9em;
+  color: #fff;
+  max-width: 120px;
+}
+
+.home-logo .credentials div:last-child {
+  border: none;
+}
+
+.home-logo .navbar {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.home-logo .navbar button {
+  margin: 20px 0;
+}
+
+.home-logo .navbar ul {
+  margin: 0;
+}
+
+.home-logo .navbar ul li {
+  height: 75px;
+}
+
+.home-logo .navbar ul li a {
+  height: 75px;
+  line-height: 75px;
+}
+
+.home-logo .navbar ul li a::after {
+  bottom: 0;
+}
+
+.home-logo .navbar .btn-danger {
+  height: 45px;
+  width: 180px;
+  background-color: #EF4B4A;
+  line-height: 45px;
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 30px;
+  border-color: inherit;
+  padding: 0;
+}
+
+.home-logo .navbar .btn-danger:hover, .home-logo .navbar .btn-danger:focus {
+  background-color: #030F27;
+}
+
+.home-logo .home-title {
+  color: #fff;
+  text-align: center;
+  font-size: 4em;
+  font-weight: 600;
+  margin: 200px 0;
+}
+
+._cards {
+  margin-top: 100px;
+}
+
+._cards ._card {
+  padding: 20px;
+  height: 350px;
+  width: 33%;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+._cards ._card .icon {
+  background-color: #FDDED4;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+._cards ._card .icon .bi {
+  font-size: 30px;
+  color: #EF4B4A;
+}
+
+._cards ._card h2 {
+  font-size: 1.5rem;
+}
+
+._cards ._card h2, ._cards ._card p {
+  text-align: center;
+}
+
+.home-text {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-height: 850px;
+  overflow: hidden;
+}
+
+.home-text .text h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.home-text .text h3 {
+  font-size: 2.3rem;
+}
+
+.home-text .text .paragraphs p {
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.home-text img {
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (max-width: 576px) {
+  ._wrapper {
+    padding: 0 25px;
+  }
+  .home-logo .home-title {
+    font-size: 8vw;
+    margin: 50px 0;
+  }
+  ._cards ._card {
+    width: 100%;
+  }
+  .home-text .text, .home-text img {
+    width: 100% !important;
+  }
+  .home-text .text {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=home.css.map */

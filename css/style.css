@@ -6,6 +6,44 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+._wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.home .header__info {
+  background-color: #030F27;
+  overflow: hidden;
+  padding: 0 50px;
+  font-size: 1rem;
+}
+
+.home .header__info ._wrapper .phone .bi, .home .header__info ._wrapper .email .bi {
+  color: #EF4B4A;
+  margin-right: 5px;
+}
+
+.home .header__info ._wrapper .phone a, .home .header__info ._wrapper .email a {
+  text-decoration: none;
+  color: #558CC0;
+}
+
+.home .header__info ._wrapper .phone::after {
+  content: "|";
+  padding-left: 10px;
+}
+
+.home .header__info ._wrapper .yelp {
+  overflow: hidden;
+}
+
+.home .header__info ._wrapper .yelp img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 50px;
+}
+
 .header__info {
   background-color: #F7F9FA;
   overflow: hidden;
@@ -78,12 +116,16 @@ body {
 
 .navbar {
   padding: 0 50px;
+  font-size: 1em;
+}
+
+.navbar button {
+  margin-bottom: 20px;
 }
 
 .navbar ul {
   max-width: 1140px;
   margin: 0 auto;
-  height: 100px;
 }
 
 .navbar ul li {
@@ -175,7 +217,6 @@ body {
 }
 
 ._body ._container ._services {
-  width: 30% !important;
   border: 1px solid #B1B5C9;
   border-radius: 5px;
   padding: 30px 35px;
@@ -196,6 +237,15 @@ body {
   left: -5px;
 }
 
+._body ._container ._services a:first-child {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+._body ._container ._services a:first-child::before {
+  display: none;
+}
+
 ._body ._container ._services a:hover, ._body ._container ._services a:focus {
   color: #EF4B4A;
 }
@@ -205,7 +255,6 @@ body {
 }
 
 ._body ._container ._text {
-  width: 65%;
   color: #777;
 }
 
@@ -216,9 +265,7 @@ footer {
 
 footer .footer__content {
   padding: 80px 50px 30px 50px;
-  max-width: 1140px;
   width: 100%;
-  margin: 0 auto;
 }
 
 footer .footer__content .footer__contact {
@@ -283,6 +330,8 @@ footer .copyright {
   background-color: #1E2227;
   color: #ddd;
   height: 50px;
+  width: 100%;
+  text-align: center;
 }
 
 ._contact {
@@ -293,10 +342,16 @@ footer .copyright {
 }
 
 ._contact form {
-  max-width: 1140px;
   padding: 30px;
   border: 3px solid #EF4B4A;
   border-radius: 5px;
+}
+
+._contact form h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  width: 100%;
+  text-align: center;
 }
 
 ._contact form .col {
@@ -385,5 +440,14 @@ form .form-select {
   border-color: #fff;
   background-color: #EF4B4A;
   color: #fff;
+}
+
+@media only screen and (max-width: 576px) {
+  ._title ._container .page__title {
+    font-size: 7.5vw;
+  }
+  ._title ._container .breadcrumb {
+    font-size: 2.5vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,201 @@
+/* COLORS */
+$clr-header: #F7F9FA;
+$clr-header-home: #030F27;
+$clr-accent: #EF4B4A;
+$clr-highlight: #030F27;
+$clr-footer: #171A1E;
+$clr-copyright: #1E2227;
+$clr-bg-icon: #FDDED4;
+
+$txt-light: #B1B5C9;
+$txt-dark: #414042;
+$txt-normal: #777;
+$txt-links: #6D799F;
+$txt-header-home: #558CC0;
+
+.home {
+    background-image: url("../img/bg-home.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+
+.home-logo {
+    padding-top: 20px;
+
+    img {
+        width: 180px;
+    }
+    
+    .credentials {
+
+        div {
+            padding: 0 20px 0 20px;
+
+            .bi {
+                color: $clr-accent;
+                font-size: 30px;
+            }
+
+            span {
+                font-weight: 500;
+                font-size: 0.9em;
+                color: #fff;
+                max-width: 120px;
+            }
+
+            border-right: 1px solid rgba($color: #fff, $alpha: 0.2);
+
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+
+    .navbar {
+        background-color: #fff;
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        button {
+            margin: 20px 0;
+        }
+
+        ul {
+            margin: 0;
+            //height: 75px;
+
+            li {
+                height: 75px;
+
+                a {
+                    height: 75px;
+                    line-height: 75px;
+
+                    &::after {
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .btn-danger {
+            height: 45px;
+            width: 180px;
+            background-color: $clr-accent;
+            line-height: 45px;
+            
+            
+            font-weight: 500;
+            font-size: 1rem;
+            text-transform: uppercase;
+            border-radius: 30px;
+            border-color: inherit;
+            padding: 0;
+
+            &:hover, &:focus {
+                background-color: $clr-highlight;
+            }
+        }
+    }
+
+    .home-title {
+        color: #fff;
+        text-align: center;
+        font-size: 4em;
+        font-weight: 600;
+        margin: 200px 0;
+    }
+}
+
+._cards {
+    margin-top: 100px;
+
+    ._card {
+        padding: 20px;
+        height: 350px;
+        width: 33%;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        .icon {
+            background-color: $clr-bg-icon;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+
+            .bi {
+                font-size: 30px;
+                color: $clr-accent;
+            }
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        h2, p {
+            text-align: center;
+        }
+    }
+}
+
+.home-text {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    max-height: 850px;
+    overflow: hidden;
+
+    .text {
+        h2 {
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+    
+        h3 {
+            font-size: 2.3rem;
+        }
+    
+        .paragraphs {
+            p {
+                padding: 0;
+                margin: 0;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    img {
+        object-position: center;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    ._wrapper {
+        padding: 0 25px;
+    }
+
+    .home-logo {
+        .home-title {
+            font-size: 8vw;
+            margin: 50px 0;
+        }
+    }
+
+    ._cards {
+        ._card {
+            width: 100%;
+        }
+    }
+
+    .home-text {
+        .text, img {
+            width: 100% !important;
+        }
+
+        .text {
+            text-align: center;
+        }
+    }
+}
